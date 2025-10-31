@@ -19,7 +19,7 @@ api = Api(app,
           version='1.0',
           title='Simple Items API',
           description='REST API with Flask, SQLite and Swagger UI (flask-restx)',
-          doc='/'  # Swagger UI na rootu: http://localhost:5000/
+          doc='/api/'  # Swagger UI na /api/: http://localhost:5000/api/
           )
 
 ns = api.namespace('items', description='Operations on items')

@@ -5,10 +5,15 @@ Tento projekt obsahuje dvě samostatné aplikace:
 1. **Systém pro správu faktur** - Kompletní systém pro správu faktur s autentizací a reporty
 2. **API pro správu položek** - REST API s dokumentací Swagger pro správu položek (úkoly/produkty)
 
+## GitHub repozitář
+
+Repozitář je dostupný na GitHubu a obsahuje kompletní README.md s popisem API.
+
 ## Požadavky
 
 - Python 3.8 nebo vyšší
 - pip (správce balíčků pro Python)
+- Windows, macOS nebo Linux
 
 ## Instalace
 
@@ -49,8 +54,9 @@ Aplikace se spustí na adrese `http://localhost:5000`
 
 Funkce:
 - RESTful API pro správu položek (úkoly/produkty)
-- Dokumentace Swagger/OpenAPI dostupná na hlavní adrese
+- Dokumentace Swagger/OpenAPI dostupná na adrese `http://localhost:5000/api/`
 - Webové rozhraní pro ukázku funkčnosti API
+- Endpoint `/api` s Swagger dokumentací
 
 ## Testování
 
@@ -86,11 +92,11 @@ python -m pytest test_items_api.py -v
 - `GET /api/reports/overdue` - Získání faktur po splatnosti
 
 ### API pro správu položek
-- `GET /items` - Získání seznamu položek
-- `POST /items` - Vytvoření nové položky
-- `GET /items/{id}` - Získání konkrétní položky
-- `PUT /items/{id}` - Aktualizace položky
-- `DELETE /items/{id}` - Smazání položky
+- `GET /api/items` - Získání seznamu položek
+- `POST /api/items` - Vytvoření nové položky
+- `GET /api/items/{id}` - Získání konkrétní položky
+- `PUT /api/items/{id}` - Aktualizace položky
+- `DELETE /api/items/{id}` - Smazání položky
 
 ## Použité technologie
 
